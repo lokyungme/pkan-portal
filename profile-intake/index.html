@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create your family page — pkan.portal</title>
+<link rel="stylesheet" href="../style.css">
+<style id="account-flow-styles">
+.account-flow{max-width:720px;padding:54px 0 90px}.account-flow .kicker{margin-bottom:14px}.account-flow h1{max-width:650px;margin-bottom:16px}.account-lead{max-width:580px;line-height:1.65;margin-bottom:34px}.account-card{max-width:520px;padding:27px 29px;border:1px solid rgba(45,61,47,.18);border-radius:24px;background:rgba(255,255,255,.10)}.account-field{display:block;margin:0 0 19px;font-family:monospace;font-size:11px}.account-field input{box-sizing:border-box;width:100%;margin-top:7px;padding:11px 12px;border:1px solid rgba(45,61,47,.24);border-radius:8px;background:transparent;color:inherit;font:inherit}.account-primary,.account-secondary{display:inline-block;margin-top:9px;padding:0 0 3px;border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;font:inherit;text-decoration:none;cursor:pointer}.account-secondary{opacity:.62;margin-left:22px}.account-small{font-size:12px;line-height:1.55;opacity:.65;margin-top:20px}.account-small a{color:inherit}.family-light{width:76px;height:76px;border-radius:50%;margin:0 0 23px;background:radial-gradient(circle at 29% 25%,#f5dfc9 0%,#d7b0a5 29%,#9d91ad 62%,#718f85 100%);box-shadow:inset -10px -10px 18px rgba(61,57,67,.10),inset 8px 7px 13px rgba(255,255,255,.34),0 0 29px rgba(112,91,67,.15)}.family-light.small{width:53px;height:53px;margin-bottom:15px}.family-light.welcome{width:112px;height:112px;margin-bottom:29px}.account-progress{font-family:monospace;font-size:10px;letter-spacing:.04em;opacity:.48;margin-bottom:25px}.privacy-group{margin:24px 0 4px}.privacy-group>strong{display:block;font-family:monospace;font-size:11px;text-transform:lowercase;margin-bottom:3px}.privacy-choice{display:block;padding:13px 0;border-bottom:1px solid rgba(45,61,47,.13);font-size:14px;line-height:1.45}.privacy-choice input{margin-right:8px}.privacy-choice small{display:block;margin:5px 0 0 23px;opacity:.58}.welcome-note{font-family:monospace;font-size:11px;opacity:.56;margin:25px 0 16px}.intake-family-light{width:58px;height:58px;border-radius:50%;margin:0 0 18px;background:radial-gradient(circle at 29% 25%,#f5dfc9 0%,#d7b0a5 29%,#9d91ad 62%,#718f85 100%);box-shadow:inset -8px -8px 14px rgba(61,57,67,.10),inset 6px 6px 11px rgba(255,255,255,.34),0 0 24px rgba(112,91,67,.14)}
+@media(max-width:700px){.account-flow{padding:30px 0 70px}.account-card{padding:21px;border-radius:18px}.account-secondary{display:block;margin:18px 0 0}}
+</style></head>
+<body class="profile-intake-page room-community">
+<div class="app">
+  <header class="topbar">
+    <div class="brand-wrap">
+      <a class="brand" href="../"><span class="brand-spark"><i></i><b></b></span>pkan.portal</a>
+      <div class="tagline">a community for families<br>living with PKAN</div>
+    </div>
+    <div class="top-actions"><a href="../about/">why we’re here</a><a href="../sign-in/">account⌄</a></div>
+  </header>
+
+  <aside class="sidebar">
+    <nav class="side-nav">
+      <a class="side-link" href="../"><span class="side-icon icon-home"></span><span>home</span></a>
+      <a class="side-link" href="../newly-diagnosed/"><span class="side-icon icon-newly"></span><span>newly diagnosed</span></a>
+      <a class="side-link" href="../community/"><span class="side-icon icon-community"></span><span>community</span></a>
+      <a class="side-link active" href="../profile-intake/"><span class="side-icon icon-message-board"></span><span>make our page</span></a>
+      <a class="side-link" href="../message-board/"><span class="side-icon icon-message-board"></span><span>message board</span></a>
+      <a class="side-link" href="../research/"><span class="side-icon icon-research"></span><span>research + treatment</span></a>
+      <a class="side-link" href="../fundraisers/"><span class="side-icon icon-fundraisers"></span><span>fundraisers</span></a>
+      <a class="side-link" href="../educational-resources/"><span class="side-icon icon-education"></span><span>educational resources</span></a>
+      <a class="side-link" href="../updates/"><span class="side-icon icon-updates"></span><span>updates</span></a>
+      <a class="side-link random-side-link" href="../questions/"><span class="side-icon icon-random">❓</span><span>question of<br>the week</span></a>
+    </nav>
+    <div class="side-note">you can add more later</div>
+  </aside>
+
+  <main class="main">
+    <div class="content-wrap intake-wrap">
+      <section class="intake-shell">
+
+        <div class="intake-intro active" data-step="0">
+          <div class="account-progress">2 / 3 · YOUR FAMILY PAGE</div><div class="intake-family-light"></div><div class="kicker">MAKE YOUR FAMILY PAGE</div>
+          <h1>Let’s make your family page.</h1>
+          <p>A few details will give your family a little identity here. You can always add more later.</p>
+          <button class="intake-primary" data-next>begin →</button>
+        </div>
+
+        <div class="intake-step" data-step="1">
+          <div class="step-count">1 / 7</div>
+          <h2>Who are you here for?</h2>
+          <div class="choice-grid" data-field="relationship">
+            <button data-value="my child">my child</button>
+            <button data-value="myself">myself</button>
+            <button data-value="a sibling">a sibling</button>
+            <button data-value="someone else">someone else</button>
+            <button data-value="I work with the PKAN community">I work with the PKAN community</button>
+          </div>
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="2">
+          <div class="step-count">2 / 7</div>
+          <h2>What should we call your family here?</h2>
+          <input class="big-input" data-input="family_name" placeholder="Diana’s family">
+          <p class="field-note">You can use a first name, nickname, family name, or anything you’re comfortable sharing.</p>
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="3">
+          <div class="step-count">3 / 7</div>
+          <h2>Where are you?</h2>
+          <div class="field-stack">
+            <label>country<input data-input="country" placeholder="United States"></label>
+            <label>state / region <span>optional</span><input data-input="region" placeholder="North Carolina"></label>
+            <label>city <span>optional</span><input data-input="city" placeholder="Cary"></label>
+          </div>
+          <div class="privacy-box">
+            <label><input type="checkbox" data-check="show_country" checked> show my country on the community map</label>
+            <label><input type="checkbox" data-check="show_city"> show my city / region</label>
+            <small>We will never ask for your street address.</small>
+          </div>
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="4">
+          <div class="step-count">4 / 7</div>
+          <h2>Who in your family has PKAN?</h2>
+          <input class="big-input" data-input="person_name" placeholder="Diana">
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="5">
+          <div class="step-count">5 / 7</div>
+          <h2>When were they born?</h2>
+          <div class="date-row">
+            <select data-input="birth_month">
+              <option value="">month</option>
+              <option>January</option><option>February</option><option>March</option><option>April</option>
+              <option>May</option><option>June</option><option>July</option><option>August</option>
+              <option>September</option><option>October</option><option>November</option><option>December</option>
+            </select>
+            <input data-input="birth_year" inputmode="numeric" maxlength="4" placeholder="year">
+          </div>
+          <p class="field-note">Month + year is enough. We don’t need an exact birthday.</p>
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="6">
+          <div class="step-count">6 / 7</div>
+          <h2>When were they diagnosed with PKAN?</h2>
+          <div class="date-row">
+            <select data-input="diagnosis_month">
+              <option value="">month</option>
+              <option>January</option><option>February</option><option>March</option><option>April</option>
+              <option>May</option><option>June</option><option>July</option><option>August</option>
+              <option>September</option><option>October</option><option>November</option><option>December</option>
+            </select>
+            <input data-input="diagnosis_year" inputmode="numeric" maxlength="4" placeholder="year">
+          </div>
+          <div class="step-nav"><button data-back>← back</button><button data-next>continue →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="7">
+          <div class="step-count">7 / 7</div>
+          <h2>Would you like to add a picture?</h2>
+          <div class="photo-drop">
+            <input type="file" id="profile-photo" accept="image/*">
+            <label for="profile-photo">+ choose a picture</label>
+            <div class="photo-preview" id="photo-preview"></div>
+          </div>
+          <div class="step-nav"><button data-back>← back</button><button id="continue-to-privacy">continue →</button></div>
+        </div>
+
+        <div class="intake-ready" data-step="8">
+          <div class="ready-spark">✳</div>
+          <div class="kicker">YOU’RE HERE</div>
+          <h1>Your little place is ready.</h1>
+
+          <div class="mini-profile-card">
+            <div class="mini-photo" id="mini-photo"><span>✦</span></div>
+            <div>
+              <h3 id="mini-family">Your family</h3>
+              <p id="mini-location">somewhere in the world</p>
+              <small>joined today</small>
+            </div>
+          </div>
+
+          <div class="ready-actions">
+            <button class="intake-primary" data-next>tell us a little more →</button>
+            <button class="intake-secondary" id="show-profile-now">visit our page →</button>
+          </div>
+        </div>
+
+        <div class="intake-step" data-step="9">
+          <div class="kicker">TELL US A LITTLE MORE</div>
+          <h2>When did you first notice that something might be different?</h2>
+          <textarea data-input="first_notice" placeholder="Write as much or as little as you’d like..."></textarea>
+          <div class="visibility-row">
+            <span>who can see this?</span>
+            <select data-input="first_notice_visibility">
+              <option>everyone in the portal</option>
+              <option>PKAN families only</option>
+              <option>only me</option>
+            </select>
+          </div>
+          <p class="field-note">Your answer may help another family recognize an experience similar to theirs.</p>
+          <div class="step-nav"><button data-back>← back</button><button data-next>next question →</button></div>
+        </div>
+
+        <div class="intake-step" data-step="10">
+          <div class="kicker">TELL US A LITTLE MORE</div>
+          <h2>What were the first symptoms you noticed?</h2>
+          <div class="choice-grid symptoms" data-field="symptoms" data-multi="true">
+            <button data-value="walking / gait">walking / gait</button>
+            <button data-value="dystonia">dystonia</button>
+            <button data-value="speech">speech</button>
+            <button data-value="vision">vision</button>
+            <button data-value="swallowing">swallowing</button>
+            <button data-value="other">other +</button>
+          </div>
+          <textarea data-input="symptom_notes" placeholder="anything you’d like to add..."></textarea>
+          <div class="step-nav"><button data-back>← back</button><button data-next>next question →</button></div>
+        </div>
+
+        <div class="intake-step warm-question" data-step="11">
+          <div class="kicker">ONE LAST QUESTION</div>
+          <h2>What does <span data-person-label>your person</span> love right now?</h2>
+          <textarea data-input="loves_now" placeholder="strawberries, bubbles, being outside..."></textarea>
+          <div class="step-nav"><button data-back>← back</button><button data-next>add to our page →</button></div>
+        </div>
+
+        <div class="profile-result" data-step="12">
+          <a href="#" class="profile-edit" id="edit-profile">← edit answers</a>
+          <div class="profile-header-card">
+            <div class="result-photo" id="result-photo"><span>✦</span></div>
+            <div>
+              <div class="kicker">OUR FAMILY</div>
+              <h1 id="result-family">Your family</h1>
+              <p class="lead" id="result-place"></p>
+              <div class="result-meta" id="result-meta"></div>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <div class="section-kicker">LITTLE THINGS</div>
+            <article class="answer-card answer-warm">
+              <small>What do they love right now?</small>
+              <p id="result-loves">—</p>
+              <time>today</time>
+            </article>
+          </div>
+
+          <div class="profile-section">
+            <div class="section-kicker">OUR EXPERIENCE</div>
+            <article class="answer-card">
+              <small>When did you first notice something might be different?</small>
+              <p id="result-notice">—</p>
+              <time>shared today</time>
+            </article>
+            <article class="answer-card answer-blue">
+              <small>First symptoms we noticed</small>
+              <p id="result-symptoms">—</p>
+              <time>shared today</time>
+            </article>
+          </div>
+
+          <div class="profile-footer-question">
+            <span>✳</span>
+            <div>
+              <small>A QUESTION FOR ANOTHER DAY</small>
+              <p>What is something you know now that you didn’t know six months ago?</p>
+            </div>
+            <button>answer later →</button>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+</div>
+
+<script>
+const state = {
+  symptoms: []
+};
+let currentStep = 0;
+let photoData = "";
+
+const allScreens = [...document.querySelectorAll("[data-step]")];
+
+function showStep(step){
+  currentStep = step;
+  allScreens.forEach(el => el.classList.toggle("active", Number(el.dataset.step) === step));
+  window.scrollTo({top:0, behavior:"smooth"});
+  if(step === 8) updateMiniProfile();
+  if(step === 12) updateResultProfile();
+}
+
+document.querySelectorAll("[data-next]").forEach(btn => {
+  btn.addEventListener("click", () => showStep(currentStep + 1));
+});
+document.querySelectorAll("[data-back]").forEach(btn => {
+  btn.addEventListener("click", () => showStep(Math.max(0,currentStep - 1)));
+});
+
+document.querySelectorAll("[data-input]").forEach(input => {
+  const key = input.dataset.input;
+  input.addEventListener("input", () => state[key] = input.value);
+  input.addEventListener("change", () => state[key] = input.value);
+});
+
+document.querySelectorAll("[data-check]").forEach(input => {
+  const key = input.dataset.check;
+  state[key] = input.checked;
+  input.addEventListener("change", () => state[key] = input.checked);
+});
+
+document.querySelectorAll(".choice-grid").forEach(group => {
+  const field = group.dataset.field;
+  const multi = group.dataset.multi === "true";
+  group.querySelectorAll("button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if(multi){
+        btn.classList.toggle("selected");
+        const values = [...group.querySelectorAll("button.selected")].map(b=>b.dataset.value);
+        state[field] = values;
+      } else {
+        group.querySelectorAll("button").forEach(b=>b.classList.remove("selected"));
+        btn.classList.add("selected");
+        state[field] = btn.dataset.value;
+      }
+    });
+  });
+});
+
+const fileInput = document.getElementById("profile-photo");
+fileInput.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    photoData = reader.result;
+    document.getElementById("photo-preview").style.backgroundImage = `url(${photoData})`;
+    document.getElementById("photo-preview").classList.add("has-photo");
+  };
+  reader.readAsDataURL(file);
+});
+
+function locationText(){
+  const bits = [];
+  if(state.city) bits.push(state.city);
+  if(state.region) bits.push(state.region);
+  if(state.country) bits.push(state.country);
+  return bits.join(", ") || "somewhere in the world";
+}
+function familyName(){
+  return state.family_name || (state.person_name ? `${state.person_name}’s family` : "Your family");
+}
+function updateMiniProfile(){
+  document.getElementById("mini-family").textContent = familyName();
+  document.getElementById("mini-location").textContent = locationText();
+  document.querySelectorAll("[data-person-label]").forEach(el => el.textContent = state.person_name || "your person");
+  if(photoData){
+    const el=document.getElementById("mini-photo");
+    el.style.backgroundImage=`url(${photoData})`;
+    el.classList.add("has-photo");
+  }
+}
+function updateResultProfile(){
+  localStorage.setItem("pkan_family_name", familyName());
+  localStorage.setItem("pkan_family_location", locationText());
+  document.getElementById("result-family").textContent = familyName();
+  document.getElementById("result-place").textContent = locationText();
+
+  const meta = [];
+  if(state.birth_month || state.birth_year) meta.push(`born ${[state.birth_month,state.birth_year].filter(Boolean).join(" ")}`);
+  if(state.diagnosis_month || state.diagnosis_year) meta.push(`diagnosed ${[state.diagnosis_month,state.diagnosis_year].filter(Boolean).join(" ")}`);
+  document.getElementById("result-meta").textContent = meta.join(" · ");
+
+  document.getElementById("result-loves").textContent = state.loves_now || "—";
+  document.getElementById("result-notice").textContent = state.first_notice || "—";
+  const sx = (state.symptoms || []).join(", ");
+  const notes = state.symptom_notes ? `${sx ? sx + ". " : ""}${state.symptom_notes}` : sx;
+  document.getElementById("result-symptoms").textContent = notes || "—";
+
+  if(photoData){
+    const el=document.getElementById("result-photo");
+    el.style.backgroundImage=`url(${photoData})`;
+    el.classList.add("has-photo");
+  }
+}
+
+document.getElementById("show-profile-now").addEventListener("click",()=>showStep(12));
+document.getElementById("edit-profile").addEventListener("click",(e)=>{e.preventDefault();showStep(2);});
+
+document.getElementById("continue-to-privacy").addEventListener("click",()=>{
+  localStorage.setItem("pkan_family_name", familyName());
+  localStorage.setItem("pkan_family_location", locationText());
+  if(photoData) localStorage.setItem("pkan_family_photo", photoData);
+  window.location.href="../account-privacy/";
+});
+
+showStep(0);
+</script>
+
+<script>
+/* Local-preview helper:
+   GitHub Pages automatically serves /section/index.html at /section/.
+   file:// does not, so while previewing locally we point folder links
+   directly to index.html. Published URLs stay clean. */
+(function () {
+  if (window.location.protocol !== "file:") return;
+
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!href) return;
+
+    // Leave external links, anchors, mail, phone, JS alone.
+    if (/^(https?:|mailto:|tel:|javascript:|#)/i.test(href)) return;
+
+    // Folder-style internal links -> folder/index.html
+    if (href.endsWith('/')) {
+      a.setAttribute('href', href + 'index.html');
+    }
+  });
+})();
+</script>
+
+<script src="../local-preview.js"></script>
+</body>
+</html>

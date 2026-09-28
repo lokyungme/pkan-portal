@@ -1,0 +1,171 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Message Board — pkan.portal</title><link rel="stylesheet" href="../style.css"></head><body class="conversations-body room-message">
+<div class="app"><header class="topbar"><div class="brand-wrap"><a class="brand" href="../"><span class="brand-spark"><i></i><b></b></span>pkan.portal</a><div class="tagline">a community for families<br>living with PKAN</div></div><div class="top-actions"><a href="../about/">why we’re here</a><a href="../sign-in/">account⌄</a></div></header>
+<aside class="sidebar"><nav class="side-nav"><a class="side-link" href="../"><span class="side-icon icon-home"></span><span>home</span></a><a class="side-link" href="../newly-diagnosed/"><span class="side-icon icon-newly"></span><span>newly diagnosed</span></a><a class="side-link" href="../community/"><span class="side-icon icon-community"></span><span>community</span></a><a class="side-link active" href="../message-board/"><span class="side-icon icon-message-board"></span><span>message board</span></a><a class="side-link" href="../research/"><span class="side-icon icon-research"></span><span>research + treatment</span></a>
+<a class="side-link" href="../fundraisers/"><span class="side-icon icon-fundraisers"></span><span>fundraisers</span></a>
+<a class="side-link" href="../educational-resources/"><span class="side-icon icon-education"></span><span>educational resources</span></a>
+<a class="side-link" href="../updates/"><span class="side-icon icon-updates"></span><span>updates</span></a>
+<a class="side-link random-side-link" href="../questions/"><span class="side-icon icon-random">❓</span><span>question of<br>the week</span></a>
+</nav><div class="presence"><span class="presence-dot"></span>7 people here</div><div class="side-note">we are here with you</div></aside>
+
+<main class="main">
+  <div class="content-wrap conversations-page">
+    <section class="conversations-intro">
+      <div class="kicker">pkan.portal</div>
+      <h1>Message Board</h1>
+      <p class="lead">One shared place to ask, share, think out loud, and talk with other families.</p>
+
+      <div class="conversation-compose">
+        <div class="compose-top"><span class="presence-dot"></span><span>share something with the community</span></div>
+        <div class="compose-prompt">What’s on your mind?</div>
+        <div class="compose-types">
+          <button>question</button><button>idea</button><button>update</button><button>celebration</button><button>just sharing</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="message-filters" role="group" aria-label="Filter message board">
+  <button class="message-filter active" type="button" data-filter="all">all</button>
+  <button class="message-filter" type="button" data-filter="question">question</button>
+  <button class="message-filter" type="button" data-filter="idea">idea</button>
+  <button class="message-filter" type="button" data-filter="update">update</button>
+  <button class="message-filter" type="button" data-filter="celebration">celebration</button>
+  <button class="message-filter" type="button" data-filter="sharing">just sharing</button>
+</div>
+
+<section class="conversation-stream">
+      <div class="stream-head">
+        <div><span class="kicker">LATEST FROM THE COMMUNITY</span><h2>Right now</h2></div>
+        
+      </div>
+
+      <article class="conversation-post" data-category="idea">
+        <div class="post-meta"><span class="family-light light-1"></span> Minseo’s family <span>·</span> yesterday <span class="post-tag tag-idea">idea</span></div>
+        <h3>Research update translations</h3>
+        <p>Would anyone want to help make short plain-language summaries of important research updates in Korean, Spanish, Italian, and other languages?</p>
+        <div class="post-actions">✦ spark 24 <span>I can help</span> <span>11 replies</span></div>
+      </article>
+
+      <article class="conversation-post" data-category="update">
+        <div class="post-meta"><span class="family-light light-3"></span> Diana’s family <span>·</span> 2 hours ago <span class="post-tag tag-update">update</span></div>
+        <h3>Notes from our clinic visit</h3>
+        <p>We learned a few things today that might be useful to other newly diagnosed families. I’m putting our notes together here in case they help someone.</p>
+        <div class="post-actions">✦ spark 18 <span>7 replies</span></div>
+      </article>
+
+      <article class="conversation-post" data-category="question">
+        <div class="post-meta"><span class="family-light light-2"></span> Luca’s family <span>·</span> 2 days ago <span class="post-tag tag-question">question</span></div>
+        <h3>Has anyone traveled a long distance for a specialist?</h3>
+        <p>We’re trying to figure out what to expect and what was actually worth bringing or arranging ahead of time.</p>
+        <div class="post-actions">✦ spark 9 <span>14 replies</span></div>
+      </article>
+
+      <article class="conversation-post celebration-post" data-category="celebration">
+        <div class="post-meta"><span class="family-light light-5"></span> Maya’s family <span>·</span> 3 days ago <span class="post-tag tag-celebration">celebration</span></div>
+        <h3>She took six steps today!</h3>
+        <p>Just wanted to share a little good news with people who understand how enormous the little things can feel. ❤️</p>
+        <div class="post-actions">✦ spark 41 <span>19 replies</span></div>
+      </article>
+
+      <article class="conversation-post" data-category="sharing">
+        <div class="post-meta"><span class="family-light light-6"></span> Theo’s family <span>·</span> 4 days ago <span class="post-tag tag-sharing">just sharing</span></div>
+        <h3>A hello from Madrid</h3>
+        <p>We found this portal recently and wanted to introduce ourselves. It means a lot to see other families here.</p>
+        <div class="post-actions">✦ spark 16 <span>8 replies</span></div>
+      </article>
+    </section>
+  </div>
+</main>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.ideas-page a, .ideas-page button').forEach(function(el){
+    if (el.textContent.toLowerCase().includes('spark')) {
+      el.classList.add('spark-action');
+      el.addEventListener('click', function(e){
+        if (el.getAttribute('href') === '#') e.preventDefault();
+        el.classList.remove('sparked');
+        void el.offsetWidth;
+        el.classList.add('sparked');
+        const match = el.textContent.match(/(\d+)/);
+        if(match){
+          el.textContent = el.textContent.replace(match[1], String(Number(match[1])+1));
+        }
+      });
+    }
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  /* Tiny ambient traces: movement is intentionally slow and sparse. */
+  document.querySelectorAll('.family-light').forEach(function(light, i){
+    light.style.setProperty('--pulse-delay', (i * .73) + 's');
+  });
+
+  /* Let idea bubbles breathe instead of sitting perfectly still. */
+  document.querySelectorAll('.ideas-page .idea-post').forEach(function(post, i){
+    post.style.setProperty('--drift-delay', (i * -1.8) + 's');
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const filters = document.querySelectorAll('.message-filter');
+  const posts = document.querySelectorAll('.conversation-post');
+
+  filters.forEach(function(button){
+    button.addEventListener('click', function(){
+      const selected = button.dataset.filter;
+
+      filters.forEach(function(b){ b.classList.remove('active'); });
+      button.classList.add('active');
+
+      posts.forEach(function(post){
+        const show = selected === 'all' || post.dataset.category === selected;
+        post.hidden = !show;
+      });
+    });
+  });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const wanted = window.location.hash.replace('#','');
+  if(!wanted) return;
+  const button = document.querySelector('.message-filter[data-filter="'+wanted+'"]');
+  if(button) button.click();
+});
+</script>
+
+
+<script>
+/* Local-preview helper:
+   GitHub Pages automatically serves /section/index.html at /section/.
+   file:// does not, so while previewing locally we point folder links
+   directly to index.html. Published URLs stay clean. */
+(function () {
+  if (window.location.protocol !== "file:") return;
+
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!href) return;
+
+    // Leave external links, anchors, mail, phone, JS alone.
+    if (/^(https?:|mailto:|tel:|javascript:|#)/i.test(href)) return;
+
+    // Folder-style internal links -> folder/index.html
+    if (href.endsWith('/')) {
+      a.setAttribute('href', href + 'index.html');
+    }
+  });
+})();
+</script>
+
+<script src="../local-preview.js"></script>
+</body></html>

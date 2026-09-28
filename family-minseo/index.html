@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Minseo’s family — pkan.portal</title><link rel="stylesheet" href="../style.css"></head><body>
+<div class="app"><header class="topbar"><div class="brand-wrap"><a class="brand" href="../"><span class="brand-spark"><i></i><b></b></span>pkan.portal</a><div class="tagline">a community for families<br>living with PKAN</div></div><div class="top-actions"><a href="../about/">why we’re here</a><a href="../sign-in/">account⌄</a></div></header>
+<aside class="sidebar"><nav class="side-nav"><a class="side-link" href="../"><span class="side-icon icon-home"></span><span>home</span></a><a class="side-link" href="../newly-diagnosed/"><span class="side-icon icon-newly"></span><span>newly diagnosed</span></a><a class="side-link" href="../community/"><span class="side-icon icon-community"></span><span>community</span></a><a class="side-link" href="../message-board/"><span class="side-icon icon-message-board"></span><span>message board</span></a><a class="side-link" href="../research/"><span class="side-icon icon-research"></span><span>research + treatment</span></a>
+<a class="side-link" href="../fundraisers/"><span class="side-icon icon-fundraisers"></span><span>fundraisers</span></a>
+<a class="side-link" href="../educational-resources/"><span class="side-icon icon-education"></span><span>educational resources</span></a>
+<a class="side-link" href="../updates/"><span class="side-icon icon-updates"></span><span>updates</span></a>
+<a class="side-link random-side-link" href="../questions/"><span class="side-icon icon-random">❓</span><span>question of<br>the week</span></a>
+</nav><div class="presence"><span class="presence-dot"></span>7 people here</div><div class="side-note">we are here with you</div></aside>
+
+<main class="main">
+  <div class="content-wrap family-profile">
+    <section class="family-profile-head">
+      <div class="family-profile-orb orb-minseo"></div>
+      <div>
+        <div class="kicker">community profile</div>
+        <h1>Minseo’s family</h1>
+        <div class="family-profile-meta">Seoul, South Korea<br>Korean</div>
+        <div class="profile-actions"><span class="profile-pill">translations</span><span class="profile-pill">research</span><span class="profile-pill">Asia</span></div>
+      </div>
+    </section>
+
+    <section class="family-story">
+      <h2>Our story</h2>
+      <p>Our family is based in Seoul. We are interested in making sure families in Korea can find clear information about PKAN and connect with research happening internationally.</p><p>We would love to help with translations, share what we learn, and connect with other families across Asia.</p>
+    </section>
+
+    <section class="family-gallery">
+      <h2>Photos</h2>
+      <div class="photo-grid">
+        <div class="photo-placeholder">photo</div>
+        <div class="photo-placeholder">photo</div>
+        <div class="photo-placeholder">photo</div>
+      </div>
+    </section>
+
+    <section class="family-links">
+      <h2>Links</h2>
+      <div class="family-link-list">
+        <a href="#" target="_blank" rel="noopener">research notes ↗</a><a href="#" target="_blank" rel="noopener">family page ↗</a>
+      </div>
+    </section>
+
+    <div class="footer"><div>pkan.portal</div><div><a href="../community/">← back to community</a></div></div>
+  </div>
+</main>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  /* Tiny ambient traces: movement is intentionally slow and sparse. */
+  document.querySelectorAll('.family-light').forEach(function(light, i){
+    light.style.setProperty('--pulse-delay', (i * .73) + 's');
+  });
+
+  /* Let idea bubbles breathe instead of sitting perfectly still. */
+  document.querySelectorAll('.ideas-page .idea-post').forEach(function(post, i){
+    post.style.setProperty('--drift-delay', (i * -1.8) + 's');
+  });
+});
+</script>
+
+
+<script>
+/* Local-preview helper:
+   GitHub Pages automatically serves /section/index.html at /section/.
+   file:// does not, so while previewing locally we point folder links
+   directly to index.html. Published URLs stay clean. */
+(function () {
+  if (window.location.protocol !== "file:") return;
+
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!href) return;
+
+    // Leave external links, anchors, mail, phone, JS alone.
+    if (/^(https?:|mailto:|tel:|javascript:|#)/i.test(href)) return;
+
+    // Folder-style internal links -> folder/index.html
+    if (href.endsWith('/')) {
+      a.setAttribute('href', href + 'index.html');
+    }
+  });
+})();
+</script>
+
+<script src="../local-preview.js"></script>
+</body></html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our family page — pkan.portal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="living-profile-page room-community">
+<div class="app">
+<header class="topbar">
+  <div class="brand-wrap">
+    <a class="brand" href="../"><span class="brand-spark"><i></i><b></b></span>pkan.portal</a>
+    <div class="tagline">a community for families<br>living with PKAN</div>
+  </div>
+  <div class="top-actions"><a href="../questions/">today’s question</a><a href="#">account⌄</a></div>
+</header>
+<aside class="sidebar">
+  <nav class="side-nav">
+    <a class="side-link" href="../"><span class="side-icon icon-home"></span><span>home</span></a>
+    <a class="side-link" href="../community/"><span class="side-icon icon-community"></span><span>community</span></a>
+    <a class="side-link active" href="../family-profile/"><span class="side-icon icon-message-board"></span><span>our page</span></a>
+    <a class="side-link" href="../message-board/"><span class="side-icon icon-message-board"></span><span>message board</span></a>
+    <a class="side-link" href="../research/"><span class="side-icon icon-research"></span><span>research + treatment</span></a>
+  </nav>
+</aside>
+<main class="main">
+<div class="content-wrap living-profile-wrap">
+  <div class="living-profile-head">
+    <div>
+      <div class="kicker">OUR FAMILY</div>
+      <h1 id="living-family-name">Diana’s family</h1>
+      <p class="lead" id="living-location">North Carolina, United States</p>
+      <div class="profile-small-meta">This page grows whenever you answer a question.</div>
+    </div>
+    <a href="../profile-intake/" class="edit-small">edit profile →</a>
+  </div>
+
+  <section class="profile-growing-section">
+    <div class="section-kicker">LITTLE THINGS</div>
+    <div class="profile-answer-stack" id="little-things-stack">
+      <article class="living-answer warm">
+        <small>What does your child love right now?</small>
+        <p>Being outside, carrying tiny objects around, and bubbles.</p>
+        <footer><time>August 2026</time><span>everyone in the portal</span></footer>
+      </article>
+    </div>
+  </section>
+
+  <section class="profile-growing-section">
+    <div class="section-kicker">OUR EXPERIENCE</div>
+    <div class="profile-answer-stack">
+      <article class="living-answer green">
+        <small>What do you wish you had known during the first month after diagnosis?</small>
+        <p>That I didn’t need to understand everything immediately.</p>
+        <footer><time>August 2026</time><span>PKAN families only</span></footer>
+      </article>
+      <article class="living-answer blue">
+        <small>What was the first thing you noticed?</small>
+        <p>Her gait looked a little different.</p>
+        <footer><time>July 2026</time><span>everyone in the portal</span></footer>
+      </article>
+    </div>
+  </section>
+
+  <section class="profile-growing-section">
+    <div class="section-kicker">THINGS WE’RE THINKING ABOUT</div>
+    <div class="profile-answer-stack" id="thinking-stack">
+      <article class="living-answer lavender">
+        <small>What are you hopeful about right now?</small>
+        <p>That enough people working together can move the science faster.</p>
+        <footer><time>August 2026</time><span>everyone in the portal</span></footer>
+      </article>
+    </div>
+  </section>
+
+  <section class="private-note-demo">
+    <small>ONLY YOU CAN SEE THIS</small>
+    <p>Private answers can still live on your page for you, without being visible to the community.</p>
+  </section>
+
+  <div class="all-answers-link">all our answers, newest first ↓</div>
+  <section class="chronological-answers" id="chronological-answers"></section>
+
+  <a class="answer-today-link" href="../questions/"><span>✳</span> answer today’s question →</a>
+</div>
+</main>
+</div>
+<script src="../daily-question.js"></script>
+
+<script>
+/* Local-preview helper:
+   GitHub Pages automatically serves /section/index.html at /section/.
+   file:// does not, so while previewing locally we point folder links
+   directly to index.html. Published URLs stay clean. */
+(function () {
+  if (window.location.protocol !== "file:") return;
+
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!href) return;
+
+    // Leave external links, anchors, mail, phone, JS alone.
+    if (/^(https?:|mailto:|tel:|javascript:|#)/i.test(href)) return;
+
+    // Folder-style internal links -> folder/index.html
+    if (href.endsWith('/')) {
+      a.setAttribute('href', href + 'index.html');
+    }
+  });
+})();
+</script>
+
+<script src="../local-preview.js"></script>
+</body>
+</html>

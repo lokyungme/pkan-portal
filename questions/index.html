@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Question of the Week — pkan.portal</title>
+<link rel="stylesheet" href="../style.css">
+
+<style id="question-link-cleanup">
+.question-nav-disabled { opacity:.38; cursor:default; }
+.question-archive .archive-question { cursor:default; }
+</style>
+
+<style id="questions-click-fix">
+.topbar, .sidebar, header, aside {
+  position: relative;
+  z-index: 1000 !important;
+  pointer-events: auto !important;
+}
+.topbar a, .sidebar a, header a, aside a {
+  position: relative;
+  z-index: 1001 !important;
+  pointer-events: auto !important;
+}
+.answer-person-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.answer-person-link:hover { border-bottom-color: currentColor; }
+</style>
+</head>
+<body class="daily-question-page room-community questions-page">
+<div class="app">
+<header class="topbar">
+  <div class="brand-wrap">
+    <a class="brand" href="../"><span class="brand-spark"><i></i><b></b></span>pkan.portal</a>
+    <div class="tagline">a community for families<br>living with PKAN</div>
+  </div>
+  <div class="top-actions"><a href="../about/">why we’re here</a><a href="../profile-intake/">our page⌄</a></div>
+</header>
+<aside class="sidebar">
+  <nav class="side-nav">
+    <a class="side-link" href="../"><span class="side-icon icon-home"></span><span>home</span></a>
+    <a class="side-link" href="../newly-diagnosed/"><span class="side-icon icon-newly"></span><span>newly diagnosed</span></a>
+    <a class="side-link" href="../community/"><span class="side-icon icon-community"></span><span>community</span></a>
+    <a class="side-link" href="../message-board/"><span class="side-icon icon-message-board"></span><span>message board</span></a>
+    <a class="side-link" href="../research/"><span class="side-icon icon-research"></span><span>research + treatment</span></a>
+    <a class="side-link" href="../fundraisers/"><span class="side-icon icon-fundraisers"></span><span>fundraisers</span></a>
+    <a class="side-link" href="../educational-resources/"><span class="side-icon icon-education"></span><span>educational resources</span></a>
+    <a class="side-link" href="../updates/"><span class="side-icon icon-updates"></span><span>updates</span></a>
+    <a class="side-link random-side-link" href="../questions/"><span class="side-icon icon-random">❓</span><span>question of<br>the week</span></a>
+  </nav>
+</aside>
+<main class="main">
+  <div class="content-wrap questions-wrap">
+    <section class="question-current-head">
+      <div>
+        <div class="kicker">QUESTION 07 · SEPTEMBER 21–27</div>
+        <h1>What is something your child loves right now?</h1>
+      </div>
+      <a class="question-answer-link" href="#answer">answer →</a>
+    </section>
+
+    <section class="answer-field" aria-label="Community answers">
+      <article class="answer-note answer-peach note-a">
+        <p>“Ceiling fans. Every single ceiling fan.”</p>
+        <div class="answer-person"><i class="family-orb orb-peach"></i><a class="answer-person-link" href="../family-diana/">Diana · North Carolina</a></div>
+      </article>
+      <article class="answer-note answer-blue note-b">
+        <p>“Going outside after dinner and looking for the moon.”</p>
+        <div class="answer-person"><i class="family-orb orb-blue"></i><a class="answer-person-link" href="../family-minseo/">Minseo · Seoul</a></div>
+      </article>
+      <article class="answer-note answer-yellow note-c">
+        <div class="answer-photo sample-photo"><span>photo</span></div>
+        <p>“Trains. Trains. Trains.”</p>
+        <div class="answer-person"><i class="family-orb orb-yellow"></i><a class="answer-person-link" href="../family-luca/">Luca · Italy</a></div>
+      </article>
+      <article class="answer-note answer-lilac note-d">
+        <p>“Her yellow rain boots, even when it isn’t raining.”</p>
+        <div class="answer-person"><i class="family-orb orb-lilac"></i><span>Mae · Oregon</span></div>
+      </article>
+      <article class="answer-note answer-mint note-e">
+        <p>“The same song before bed, over and over.”</p>
+        <div class="answer-person"><i class="family-orb orb-mint"></i><span>Noah · Germany</span></div>
+      </article>
+      <article class="answer-note answer-rose note-f">
+        <p>“Helping water the plants. Mostly getting water everywhere.”</p>
+        <div class="answer-person"><i class="family-orb orb-rose"></i><span>Elena · Spain</span></div>
+      </article>
+    </section>
+
+    <section class="weekly-answer-box" id="answer">
+      <div class="kicker">ADD YOUR FAMILY’S ANSWER</div>
+      <textarea placeholder="write as much or as little as you’d like..."></textarea>
+      <label class="photo-upload"><input type="file" accept="image/*"><span>＋ add a photo <small>optional</small></span></label>
+      <div class="daily-answer-bottom">
+        <button type="button">add answer →</button>
+      </div>
+    </section>
+
+    <nav class="question-nav">
+      <span class="question-nav-disabled">← previous question</span>
+      <a href="#archive">all questions</a>
+      <span>next question →</span>
+    </nav>
+
+    <section class="question-archive" id="archive">
+      <div class="section-kicker">QUESTIONS</div>
+      <h2>A growing archive of our community.</h2>
+      <div class="archive-question current"><b>07</b><span>What is something your child loves right now?</span><small>12 answers</small></div>
+      <div class="archive-question"><b>06</b><span>What has made you hopeful lately?</span><small>9 answers</small></div>
+      <div class="archive-question"><b>05</b><span>What is something you wish you knew when you were first diagnosed?</span><small>17 answers</small></div>
+      <div class="archive-question"><b>04</b><span>What song is playing constantly in your house?</span><small>14 answers</small></div>
+      <div class="archive-question"><b>03</b><span>What is one tiny victory from this week?</span><small>11 answers</small></div>
+    </section>
+  </div>
+</main>
+</div>
+<script src="../local-preview.js"></script>
+</body>
+</html>
